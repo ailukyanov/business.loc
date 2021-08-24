@@ -1,0 +1,55 @@
+.mainblock {
+
+  &__imageblock {
+    margin: 0 0 40px 0;
+  }
+
+  &__bottomblock {
+  }
+
+  .imageblock {
+    position: relative;
+    height: 411px;
+
+    &__title {
+      @extend .pts;
+      position: absolute;
+      bottom: 80px;
+      right: 0;
+      text-shadow: 0 3px 1px rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 48px;
+      text-transform: uppercase;
+      z-index: 5;
+      max-width: 770px;
+    }
+
+    &__bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .bottomblock {
+    text-align: center;
+
+    &__text {
+      color: #646667;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 36px;
+      max-width: 970px;
+      margin: 0 auto;
+    }
+
+    &__btn {
+      margin: 40px 0 0 0;
+    }
+  }
+}
