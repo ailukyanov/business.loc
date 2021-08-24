@@ -162,6 +162,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.title {
+  color: #3c3f3d;
+  font-family: "PT Serif", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  @media (max-width: $md3+px) {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
 /*WRAPPER*/
 .wrapper {
   width: 100%;
