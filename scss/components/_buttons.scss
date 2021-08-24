@@ -36,4 +36,13 @@
       width: 100%;
     }
   }
+
+  @media (max-width: $md3+px) {
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+  }
 }
