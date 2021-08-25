@@ -1,0 +1,14 @@
+.country {
+
+  &__title {
+    margin: 0 0 40px 0;
+  }
+
+  &__map {
+    height: 448px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

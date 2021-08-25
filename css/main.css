@@ -1070,4 +1070,12 @@ header {
       line-height: 24px;
       padding: 0 20px 50px 20px; } }
 
+.country__title {
+  margin: 0 0 40px 0; }
+
+.country__map {
+  height: 448px; }
+  .country__map img {
+    max-width: 100%; }
+
 /*# sourceMappingURL=main.css.map */
