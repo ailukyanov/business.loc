@@ -446,6 +446,13 @@ h1, h2, h3, h4, h5, h6 {
 header {
   position: relative;
   z-index: 50; }
+  @media (max-width: 767.98px) {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff; } }
   header .header__body {
     height: 100px;
     display: -webkit-box;
@@ -632,7 +639,7 @@ header {
       margin: 0 0 80px 0; } }
   @media (max-width: 767.98px) {
     .mainblock {
-      margin: 0 0 50px 0; } }
+      margin: 50px 0; } }
   .mainblock .imageblock {
     position: relative;
     height: 411px; }
@@ -1072,10 +1079,65 @@ header {
 
 .country__title {
   margin: 0 0 40px 0; }
+  @media (max-width: 767.98px) {
+    .country__title {
+      margin: 0 0 25px 0; } }
 
 .country__map {
   height: 448px; }
   .country__map img {
     max-width: 100%; }
+
+footer .footer__body {
+  height: 125px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 600px) {
+    footer .footer__body {
+      display: block;
+      height: auto;
+      text-align: center;
+      padding: 20px 0; } }
+
+footer .footer__column:last-child {
+  text-align: right; }
+  @media (max-width: 767.98px) {
+    footer .footer__column:last-child {
+      text-align: center; } }
+
+footer .footer__copy {
+  color: #646667;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+footer .footer__link {
+  color: #646667;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 0 0 30px; }
+  footer .footer__link:hover {
+    text-decoration: underline; }
+  @media (max-width: 767.98px) {
+    footer .footer__link {
+      margin: 15px 10px 0 10px; } }
 
 /*# sourceMappingURL=main.css.map */
