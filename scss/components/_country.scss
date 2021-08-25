@@ -11,8 +11,10 @@
   &__map {
     height: 448px;
 
+    /*--for not js--*/
     img {
       max-width: 100%;
     }
+    /*--*/
   }
 }
