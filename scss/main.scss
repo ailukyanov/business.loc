@@ -1,9 +1,26 @@
-@import "core/normalize";
-@import "core/base";
-@import "components/header";
-@import "components/mainblock";
+/*------------------------------ <HELPERS> ------------------------------*/
+@import "helpers/mixins";
+@import "helpers/variables";
+/*------------------------------ </HELPERS> ------------------------------*/
+
+/*------------------------------ <COMMON> ------------------------------*/
+@import "common/base";
+@import "common/normalize";
+@import "common/fonts";
+
+/*------------------------------ </COMMON> ------------------------------*/
+/*------------------------------ <COMPONENTS> ------------------------------*/
+@import "components/font";
+@import "components/bg-gradients";
 @import "components/buttons";
-@import "components/investor";
-@import "components/newsmedia";
-@import "components/country";
-@import "components/footer";
+@import "components/titles";
+/*------------------------------ </COMPONENTS> ------------------------------*/
+
+/*------------------------------ <MODULES> ------------------------------*/
+@import "modules/header";
+@import "modules/mainblock";
+@import "modules/investor";
+@import "modules/newsmedia";
+@import "modules/country";
+@import "modules/footer";
+/*------------------------------ </MODULES> ------------------------------*/

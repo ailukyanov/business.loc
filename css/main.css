@@ -1,3 +1,109 @@
+/*------------------------------ <HELPERS> ------------------------------*/
+/*------------------------------ <MIXINS> ------------------------------*/
+/*------------------------------ </MIXINS> ------------------------------*/
+/*------------------------------ <VARIABLES> ------------------------------*/
+/*------------------------------ <DEFAULT FONT> ------------------------------*/
+/*------------------------------ </DEFAULT FONT> ------------------------------*/
+/*------------------------------ <SCREENS> ------------------------------*/
+/*------------------------------ </SCREENS> ------------------------------*/
+/*------------------------------ </VARIABLES> ------------------------------*/
+/*------------------------------ </HELPERS> ------------------------------*/
+/*------------------------------ <COMMON> ------------------------------*/
+/*------------------------------ <RESET, COMMON PARAMETERS> ------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:visited {
+    text-decoration: none; }
+  a:focus, a:active {
+    outline: none; }
+
+aside, nav, footer, header, section {
+  display: block; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+  color: #000; }
+
+body {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1; }
+  body.lock {
+    overflow: hidden; }
+    @media (max-width: 767.98px) {
+      body.lock {
+        width: 100%;
+        position: fixed;
+        overflow: hidden; } }
+
+input, button, textarea {
+  font-family: "Montserrat"; }
+
+input {
+  display: none; }
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: 0; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit; }
+
+/*------------------------------ </RESET, COMMON PARAMETERS> ------------------------------*/
+/*------------------------------ <WRAPPER> ------------------------------*/
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden; }
+
+/*------------------------------ </WRAPPER> ------------------------------*/
+/*------------------------------ <MAIN GRID> ------------------------------*/
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%; }
+  @media (max-width: 1182px) {
+    .container {
+      max-width: 970px; } }
+  @media (max-width: 992.98px) {
+    .container {
+      max-width: 750px; } }
+  @media (max-width: 767.98px) {
+    .container {
+      max-width: none;
+      padding: 0 10px; } }
+
+/*------------------------------ </MAIN GRID> ------------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,8 +111,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -313,85 +417,16 @@ template {
 [hidden] {
   display: none; }
 
-/*--Mixins--*/
-/*--*/
-/*--CONNECTED FONTS--*/
-/*--*/
-/*--DEFAULT FONT--*/
-/*--*/
-/*--VARIABLES--*/
-/*--*/
-/*--RESET, COMMON PARAMETERS--*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
-  *:before, *:after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box; }
-
-:focus, :active {
-  outline: none; }
-
-a {
-  text-decoration: none; }
-  a:hover, a:visited {
-    text-decoration: none; }
-  a:focus, a:active {
-    outline: none; }
-
-aside, nav, footer, header, section {
-  display: block; }
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  position: relative;
-  width: 100%;
-  color: #000; }
-
-body {
-  font-family: "Montserrat";
-  font-size: 14px;
-  line-height: 1; }
-  body.lock {
-    overflow: hidden; }
-    @media (max-width: 767.98px) {
-      body.lock {
-        width: 100%;
-        position: fixed;
-        overflow: hidden; } }
-
-input, button, textarea {
-  font-family: "Montserrat"; }
-
-input {
-  display: none; }
-
-button {
-  cursor: pointer;
-  padding: 0;
-  border: 0; }
-
-ul li {
-  list-style: none; }
-
-img {
-  vertical-align: top; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: inherit;
-  font-size: inherit; }
-
+/*------------------------------ <CONNECTED FONTS> ------------------------------*/
+/*------------------------------ </CONNECTED FONTS> ------------------------------*/
+/*------------------------------ </COMMON> ------------------------------*/
+/*------------------------------ <COMPONENTS> ------------------------------*/
+/*------------------------------ <FONT> ------------------------------*/
 .pts, .mainblock .imageblock__title {
   font-family: "PT Serif", sans-serif; }
 
+/*------------------------------ </FONT> ------------------------------*/
+/*------------------------------ <BG-GRADIENTS> ------------------------------*/
 .bluebg {
   position: relative;
   overflow: hidden; }
@@ -412,6 +447,65 @@ h1, h2, h3, h4, h5, h6 {
     background-image: -o-linear-gradient(252deg, #007397 0%, rgba(0, 115, 151, 0) 100%);
     background-image: linear-gradient(198deg, #007397 0%, rgba(0, 115, 151, 0) 100%); }
 
+/*------------------------------ </BG-GRADIENTS> ------------------------------*/
+/*------------------------------ <BUTTONS> ------------------------------*/
+.btn {
+  display: inline-block;
+  padding: 0 30px;
+  height: 56px;
+  line-height: 56px;
+  overflow: hidden;
+  background-color: #007397;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  min-width: 270px; }
+  .btn:after {
+    content: '';
+    width: 0;
+    position: absolute;
+    -webkit-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: #00526b; }
+  .btn span {
+    position: relative;
+    z-index: 2; }
+  .btn:hover:after {
+    left: 0;
+    width: 100%; }
+  @media (max-width: 767.98px) {
+    .btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 0;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center;
+      line-height: 18px;
+      font-size: 14px; } }
+
+/*------------------------------ </BUTTONS> ------------------------------*/
+/*------------------------------ <TITLES> ------------------------------*/
 .title {
   color: #3c3f3d;
   font-family: "PT Serif", sans-serif;
@@ -425,34 +519,15 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 25px;
       line-height: 33px; } }
 
-/*--*/
-/*--WRAPPER--*/
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden; }
-
-/*--*/
-/*--MAIN GRID--*/
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  width: 100%; }
-  @media (max-width: 1182px) {
-    .container {
-      max-width: 970px; } }
-  @media (max-width: 992.98px) {
-    .container {
-      max-width: 750px; } }
-  @media (max-width: 767.98px) {
-    .container {
-      max-width: none;
-      padding: 0 10px; } }
-
-/*--*/
+/*------------------------------ </TITLES> ------------------------------*/
+/*------------------------------ </COMPONENTS> ------------------------------*/
+/*------------------------------ <MODULES> ------------------------------*/
+/*------------------------------ <HEADER> ------------------------------*/
 header {
   position: relative;
-  z-index: 50; }
+  z-index: 50;
+  /*------------------------------ <MENU-BURGER> ------------------------------*/
+  /*------------------------------ </MENU-BURGER> ------------------------------*/ }
   @media (max-width: 767.98px) {
     header {
       position: fixed;
@@ -634,6 +709,8 @@ header {
       header .menu-header__link {
         font-size: 14px; } }
 
+/*------------------------------ </HEADER> ------------------------------*/
+/*------------------------------ <MAINBLOCK> ------------------------------*/
 .mainblock {
   margin: 0 0 100px 0; }
   .mainblock__imageblock {
@@ -732,63 +809,8 @@ header {
         .mainblock .bottomblock__btn {
           margin: 25px 0 0 0; } }
 
-/*--BUTTONS--*/
-.btn {
-  display: inline-block;
-  padding: 0 30px;
-  height: 56px;
-  line-height: 56px;
-  overflow: hidden;
-  background-color: #007397;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  position: relative;
-  text-align: center;
-  min-width: 270px; }
-  .btn:after {
-    content: '';
-    width: 0;
-    position: absolute;
-    -webkit-transition: all 0.8s ease 0s;
-    -o-transition: all 0.8s ease 0s;
-    -moz-transition: all 0.8s ease 0s;
-    transition: all 0.8s ease 0s;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    background-color: #00526b; }
-  .btn span {
-    position: relative;
-    z-index: 2; }
-  .btn:hover:after {
-    left: 0;
-    width: 100%; }
-  @media (max-width: 767.98px) {
-    .btn {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 0;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-         -moz-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-         -moz-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      text-align: center;
-      line-height: 18px;
-      font-size: 14px; } }
-
-/*--*/
+/*------------------------------ </MAINBLOCK> ------------------------------*/
+/*------------------------------ <INVESTOR> ------------------------------*/
 .investor {
   margin: 0 0 100px 0; }
   @media (max-width: 992.98px) {
@@ -882,6 +904,8 @@ header {
       .item-stat__text {
         font-size: 14px; } }
 
+/*------------------------------ </INVESTOR> ------------------------------*/
+/*------------------------------ <NEWSMEDIA> ------------------------------*/
 .newsmedia {
   margin: 0 0 70px 0; }
   @media (max-width: 992.98px) {
@@ -889,7 +913,7 @@ header {
       margin: 0 0 40px 0; } }
   @media (max-width: 767.98px) {
     .newsmedia {
-      margin: 0 0 205px 0; } }
+      margin: 0 0 25px 0; } }
 
 .header-newsmedia {
   display: -webkit-box;
@@ -1085,6 +1109,8 @@ header {
       line-height: 24px;
       padding: 0 20px 50px 20px; } }
 
+/*------------------------------ </NEWSMEDIA> ------------------------------*/
+/*------------------------------ <COUNTRY> ------------------------------*/
 .country__title {
   margin: 0 0 40px 0; }
   @media (max-width: 767.98px) {
@@ -1092,12 +1118,16 @@ header {
       margin: 0 0 25px 0; } }
 
 .country__map {
-  height: 448px;
-  /*--for not js--*/
-  /*--*/ }
+  /*------------------------------ <For js> ------------------------------
+    height: 448px;
+    ------------------------------ </For js> ------------------------------*/
+  /*------------------------------ <For not js> ------------------------------*/
+  /*------------------------------ </For not js> ------------------------------*/ }
   .country__map img {
     max-width: 100%; }
 
+/*------------------------------ </COUNTRY> ------------------------------*/
+/*------------------------------ <FOOTER> ------------------------------*/
 footer .footer__body {
   height: 125px;
   display: -webkit-box;
@@ -1149,5 +1179,8 @@ footer .footer__link {
   @media (max-width: 767.98px) {
     footer .footer__link {
       margin: 15px 10px 0 10px; } }
+
+/*------------------------------ </FOOTER> ------------------------------*/
+/*------------------------------ </MODULES> ------------------------------*/
 
 /*# sourceMappingURL=main.css.map */
